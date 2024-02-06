@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="kalkulator.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:kalkulator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Margin="0,0,10,10">
+        <TextBox x:Name="op1" HorizontalAlignment="Left" Margin="732,277,0,0" Text="" VerticalAlignment="Top" TextAlignment="Center" RenderTransformOrigin="1.497,0.504"/>
+        <TextBox x:Name="op2" HorizontalAlignment="Left" Margin="732,405,0,0" Text="" VerticalAlignment="Top" TextAlignment="Center" RenderTransformOrigin="-0.972,0.481"/>
+        <TextBlock HorizontalAlignment="Left" Margin="713,487,0,0" TextWrapping="Wrap" Text="Result:" VerticalAlignment="Top" TextAlignment="Center"/>
+        <TextBlock x:Name="_out" HorizontalAlignment="Left" Margin="788,487,0,0" Text="0" VerticalAlignment="Top" TextAlignment="Center"/>
+        <Button x:Name="add" Content="+" Margin="645,349,0,0" VerticalAlignment="Top" Click="add_Click"/>
+        <Button x:Name="sub" Content="-" Margin="713,349,0,0" VerticalAlignment="Top" Click="sub_Click"/>
+        <Button x:Name="mul" Content="*" Margin="783,349,0,0" VerticalAlignment="Top" Click="mul_Click"/>
+        <Button x:Name="div" Content="/" Margin="849,349,0,0" VerticalAlignment="Top" Click="div_Click"/>
+        <RadioButton x:Name="_base" Content="Decimal" Margin="485,312,0,0" VerticalAlignment="Top" GroupName="base" Checked="_base_Checked"/>
+        <RadioButton x:Name="_base1" Content="Binary" Margin="485,349,0,0" VerticalAlignment="Top" GroupName="base" Checked="_base1_Checked"/>
+        <RadioButton x:Name="_base2" Content="Octal" Margin="485,386,0,0" GroupName="base" Checked="_base2_Checked" VerticalAlignment="Top"/>
+        <RadioButton x:Name="_base3" Content="Hex" Margin="485,423,0,0" VerticalAlignment="Top" GroupName="base" Checked="_base3_Checked"/>
+
+    </Grid>
+</Page>
